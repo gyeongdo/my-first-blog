@@ -20,8 +20,10 @@ def post_detail(request, pk):
     })
 
 def post_new(request):
+    form_class = PostForm
+    form = form_class(request.POST or None)
     if request.method == 'POST':
-        form = PostForm(request.POST, request.Files)
+        # form = form_class(request.POST, request.Files)
         if form.is_valid():
             if form.is_valid():
                 post = form.save(commit=False)
@@ -35,13 +37,13 @@ def post_new(request):
         'form': form, 
     })
 
-
-
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
-
+    
+    form_class = PostForm
+    form = form_class(request.POST or None, instance=post)
     if request.method == 'POST':
-        form = PostForm(request.POST, request.Files, instance=post)
+        # form = PostForm(request.POST, request.Files, instance=post)
         if form.is_valid():
             if form.is_valid():
                 post = form.save(commit=False)
