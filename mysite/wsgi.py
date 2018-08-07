@@ -11,6 +11,9 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "firstsite.settings")
+#os.environ.setdefault("DJANGO_SETTINGS_MODULE", "firstsite.settings")
+path = '/home/path/to/project'
+if path not in sys.path:
+    sys.path.append(path)
 
 application = get_wsgi_application()
