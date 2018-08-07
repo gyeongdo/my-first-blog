@@ -6,7 +6,7 @@ from .forms import PostForm
 
 def post_list(request):
     qs = Post.objects.all()
-    qs = qs.filter(published_date__lte = timezone.now())
+    qs = qs.filter(published_date__gte = timezone.now())
     qs = qs.order_by('published_date')
 
     return render(request, 'blog/post_list.html',{
