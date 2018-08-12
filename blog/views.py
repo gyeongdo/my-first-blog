@@ -1,13 +1,18 @@
 from django.shortcuts import get_object_or_404,redirect, render
 from django.utils import timezone
+from rest_framework import viewsets
 from .models import Post
+from .serializers import PostSerializer
 from .forms import PostForm
 
+class PostViewSet(viewsets.ModelViewSet):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
 
 def post_list(request):
     qs = Post.objects.all()
-    qs = qs.filter(published_date__gte = timezone.now())
-    qs = qs.order_by('published_date')
+    qs = qs.filter(published_date__lte = timezone.now())
+    qs = qs.order_by('-published_date')
 
     return render(request, 'blog/post_list.html',{
         'post_list' : qs,
