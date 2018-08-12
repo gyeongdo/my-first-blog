@@ -3,9 +3,6 @@ from django.utils import timezone
 from .models import Post
 from .forms import PostForm
 
-class PostViewSet(viewsets.ModelViewSet):
-    queryset = Post.objects.all()
-    serializer_class = PostSerializer
 
 def post_list(request):
     qs = Post.objects.all()
