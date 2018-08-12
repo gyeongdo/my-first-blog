@@ -1,7 +1,6 @@
 from django.shortcuts import get_object_or_404,redirect, render
 from django.utils import timezone
 from .models import Post
-from .serializers import PostSerializer
 from .forms import PostForm
 
 class PostViewSet(viewsets.ModelViewSet):
