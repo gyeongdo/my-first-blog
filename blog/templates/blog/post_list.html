@@ -1,21 +1,149 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 {% extends "blog/base.html" %}
 
 {% block content %}
-    {% for post in post_list %}
-        <div class="post">
-            <div class="date">
-                <div class-"post">
-                    <div class="date">
-                        <p>published: {{ post.published_date }}</p>
-                    </div>
-                    <h1>
-                        <a href="{% url "post_detail" post.pk %}">
-                            {{ post.title }}
-                        </a>
-                    </h1>
+{% load static %}
+      <div id="myCarousel" class="example-classname carousel slide" data-ride="carousel"> 
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+          </ol>
+          <div class="carousel-inner">
+              <div class="item active"> <img src="{% static 'img/city.jpg' %}" style="width:100%" data-src="" alt="First slide">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h2> Headling 1 </h2>
+                    <p> Description 1</p>
+                  </div>
                 </div>
-                    <p>{{ post.text|linebreaksbr }}</p>
-            </div>
+              </div>
+              <div class="item"> <img src="{% static 'img/spec.jpeg' %}" style="width:100%" data-src="" alt="Second slide">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h2>Headling 2</h2>
+                    <p> Description 2</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item"> <img src="{% static 'img/dsaw.jpg' %}" style="width:100%" data-src="" alt="Third slide">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h2>Headling 3</h2>
+                    <p> Description 3</p>
+                    <p><a class="btn btn-lg btn-primary" href="{% url 'post_year' %}" role="button">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+          </div>           
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+      </div>
+
+      <div class="bgimg">
+        <div id="introduction" class="l-section l-split">
+            <section role="region" id="myself" class="l-section">
+                <div class="l-section-inner is-init is-animated" data-animation="zoom-in-right">
+                    <h2 class="section-heading">
+                        <span class="secondary">Intro</span>
+                        <span class="primary">About myself</span>
+                    </h2>
+                    <div class="section-content">
+                        <p>안녕하세요. 90년생 개발자 이경도입니다.</p>
+                        <p>항상 재밌는 일, 즐기면서 할 수 있는 일을 고민했고 프로그래밍 하며 일을 할 수 있다는 것이 행운이라고 생각하는 개발자입니다.</p>
+                        <p>전공은 부동산이지만 늦게 프로그래밍에 입문한 만큼 남들보다 열심히 코딩하고 있습니다.</p>
+                        <p>새로운 기술, 새로운 언어를 배울때마다 항상 설레고 기쁩니다. 새로운 기술로 더 나은 서비스를 개발하는 모습을 항상 꿈꿉니다.</p>
+                    </div>
+                </div>
+            </section>
+            <section role="region" id="skills" class="l-section">
+                <div class="l-section-inner is-init is-animated" data-animation="zoom-in-left">
+                    <h2 class="section-heading">
+                        <span class="secondary">Skills</span>
+                        <span class="primary">What I can do</span>
+                    </h2>
+                    <div class="section-content">
+                        <figure>
+                            <figcaption class="list-caption">JAVA</figcaption>
+                            <ul class="skill-list checked-list">
+                                <li>스프링 전자정부프레임워크 개발</li>
+                                <li>....</li>
+                            </ul>
+                        </figure>
+                        <figure>
+                            <figcaption class="list-caption">DB</figcaption>
+                            <ul class="skill-list checked-list">
+                                <li>Orcle, Altibase 프로젝트 경험</li>
+                                <li>....</li>
+                            </ul>
+                        </figure>
+                        <figure>
+                            <figcaption class="list-caption">HTML</figcaption>
+                            <ul class="skill-list checked-list">
+                                <li>HTML5 및 XHTML 페이지 하드코딩</li>
+                                <li>웹 접근성 (Native)</li>
+                            </ul>
+                        </figure>
+                        <figure>
+                            <figcaption class="list-caption">CSS</figcaption>
+                            <ul class="skill-list checked-list">
+                                <li>반응형 레이아웃 (부트스트랩 가능)</li>
+                                <li>브라우저 호환성 관리</li>
+                            </ul>
+                        </figure>
+                        <figure>
+                            <figcaption class="list-caption">JavaScript</figcaption>
+                            <ul class="skill-list checked-list">
+                                <li>jQuery 1~3, jQuery UI, Library</li>
+                                <li>AJAX</li>
+                                <li>RegExp</li>
+                            </ul>
+                        </figure>
+                    </div>
+                </div>
+            </section>
         </div>
-    {% endfor %}
+      </div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<style>
+  body, html { 
+      margin: 0;
+      padding: 0;
+      height: 100%;
+  }
+  .bgimg {
+      border: 0;
+      padding: 0; 
+      background-image: url("{% static 'img/dsaw.jpg' %}");
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+  }
+</style>
+
 {% endblock %}

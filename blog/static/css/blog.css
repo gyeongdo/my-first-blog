@@ -1,11 +1,11 @@
 h1 a {
-    color: #FCA205;
-    font-family: 'Lobster';
+    color: #cca772;
+    font-family: 'BEBAS';
 }
 
 .page-header {
-    background-color: #ff9400;
-    margin-top: 0;
+    background-color: #cca772;
+    margin: 0; 
     padding: 20px 20px 20px 40px;
 }
 
@@ -20,7 +20,7 @@ h1 a {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'AAARGH';
 }
 
 .date {
@@ -49,3 +49,65 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
+
+.view {
+    height: 1000px;
+}
+
+#myself{
+    background:#1895c5;
+    text-align:right;
+}
+
+#skills{
+    background:#1ca8dd;
+    text-align:left;
+}
+
+.l-section.l-split{
+    display:table;
+    width:100%;
+    padding:0;
+    border-spacing:0;
+    table-layout:fixed;
+}
+
+p,dl,ol,ul{word-break:keep-all;}
+
+.l-section{background:white}
+
+.l-section{min-height:100vh;padding:15vh 100px;position:relative;box-sizing:border-box;}
+
+.l-section.l-split > .l-section {display:table-cell;}
+
+.section-heading .primary{display:block;font-size:64px;padding-bottom:.25em;position:relative;}
+
+.section-heading .primary::after{background:#30b7e8;border-radius:.25em;display:block;width:1.25em;height:2px;margin-left:-.625em;position:absolute;bottom:0;left:50%;content:"";}
+
+#myself,#skills{color:white;width:50%}
+
+#myself .section-content{margin-left:auto;max-width:35em}
+
+#myself .section-heading .primary::after{margin:0;right:0; left:auto; }
+
+.section-content > p {margin-top:20px;}
+
+
+/* .checked-list > li::before {padding-left:5px; content:"|"}
+.checked-list > li:first-child::before{content:""} */
+
+/* #container{
+	height:5000px;
+}
+
+#log{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100px;
+	height:50px;
+	background-color:rgba(0,0,0,0.7);
+	color:white;
+	text-align:center;
+	line-height:50px;
+} */

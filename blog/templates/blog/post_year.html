@@ -1,0 +1,76 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+{% load static %}
+<script type="text/javascript" src="{% static 'js/post_year.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/scrollJquery.css' %}">
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="{% static 'js/billboard.js' %}"></script>
+<script src="{% static 'css/billboard.css' %}"></script>
+
+<!-- insight.css -->
+
+<div class="example-classname panel overview" data-section-name="1">
+    <div class="inner">
+        <h2>coding & programming</h2>
+        <div id="PieChart"></div>
+    </div>
+</div>
+
+<div class="example-classname panel options" data-section-name="2">
+    <div class="inner">
+        <h2>2016.10 ~ 2016.12</h2>
+        <h4>식품의약품안전처 의약품 유지보수</h4>
+    </div>
+</div>
+
+<div class="example-classname configuration" data-section-name="3">
+    <div class="inner">
+        <h2>2017.01~ 2017.12</h2>
+        <h4>식품의약품안전처 통합식품안전망 고도화 사업 개발</h4>
+    </div>
+</div>
+
+<div class="example-classname methods" data-section-name="4">
+    <div class="inner">
+        <h2>2018.01~ 2018.10</h2>
+        <h4>식품의약품안전처 식품의약품안전처 의약품 차세대 사업 개발</h4>
+    </div>
+</div>
+
+
+<script>
+    var chart = bb.generate({
+        data: {
+          columns: [
+          ["JAVA", 3],
+          ["PYTHON", 1],
+          ["ORACLE", 3],
+          ["ALTIBASE", 1],
+          ["JAVASCRIPT", 3],
+          ["JQUERY", 3],
+          ["JSP", 3],
+          ],
+          type: "pie",
+          onclick: function(d, i) {
+          console.log("onclick", d, i);
+         },
+          onover: function(d, i) {
+          console.log("onover", d, i);
+         },
+          onout: function(d, i) {
+          console.log("onout", d, i);
+         }
+        },
+        bindto: "#PieChart"
+      });
+      
+</script>
+
+
+<!-- <div id="container">
+	<div id="log">0</div>
+</div> -->
+
+{% endblock %}

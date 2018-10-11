@@ -1,0 +1,67 @@
+.panel {
+  position: relative;
+  border-bottom:1px solid #666;
+  /*overflow-x: hidden;*/
+}
+.home {
+  background: #65c2cf;
+  background:hsl(184,65%,49%);
+  text-align:center;
+}
+.examples,
+.overview {
+  background:#f7aeba;
+  background:#f7aeba;
+
+}
+.configuration {
+  background:#6dcb94;
+  background:hsl(158,58%,52%);
+}
+.options {
+  background:#ec8200;
+  background:hsl(28,100%,52%);
+}
+.methods {
+  background:#64a0d4;
+  background:hsl(200,60%,55%);
+}
+
+/****** Main ********/
+
+body {
+  /* font-size:62.5%; */
+  font-family: 'Lato', sans-serif;
+  color:#FFF;
+}
+h1 {
+  font-size:7em;
+  /* padding:1.4em 0 0 0; */
+}
+h2 {
+  font-size:6em;
+  padding:0.5em 0 0.5em 0;
+}
+h3 {
+  font-size:2.3em;
+}
+dt {
+  font-size:2.3em;
+}
+dd {
+  font-size:1.9em;
+  padding:0.6em 0 0.9em 0;
+}
+p {
+  font-size:1.9em;
+  padding:0.4em 0 0.4em 0;
+}
+
+.inner {
+  width:960px;
+  margin:0 auto;
+}
+
+header {
+  padding-bottom:5em;
+}
