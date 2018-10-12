@@ -1,6 +1,7 @@
 .panel {
   position: relative;
   border-bottom:1px solid #666;
+  margin-bottom: 0px !important;
   /*overflow-x: hidden;*/
 }
 .home {
@@ -23,8 +24,16 @@
   background:hsl(28,100%,52%);
 }
 .methods {
+  display: block;
+  text-align: left;
+  width:100%;
+
   background:#64a0d4;
   background:hsl(200,60%,55%);
+}
+
+.bb {
+  width:100%;
 }
 
 /****** Main ********/
@@ -35,12 +44,13 @@ body {
   color:#FFF;
 }
 h1 {
-  font-size:7em;
+  /* font-size:7em; */
   /* padding:1.4em 0 0 0; */
 }
 h2 {
-  font-size:6em;
-  padding:0.5em 0 0.5em 0;
+  /* font-size:6em; */
+  /* padding:0.5em 0 0.5em 0; */
+  padding:0;
 }
 h3 {
   font-size:2.3em;
@@ -60,8 +70,12 @@ p {
 .inner {
   width:960px;
   margin:0 auto;
+  display: block;
 }
 
-header {
+/* header {
   padding-bottom:5em;
-}
+} */
+
+
+

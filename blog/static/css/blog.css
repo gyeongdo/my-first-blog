@@ -1,9 +1,3 @@
-
-
-@media ( max-width: 1000px ) {
-  body { color: red; }
-}
-
 h1 a {
     color: #cca772;
     font-family: 'BEBAS';
@@ -88,7 +82,7 @@ p,dl,ol,ul{word-break:keep-all;}
 
 .section-heading .primary{display:block;font-size:64px;padding-bottom:.25em;position:relative;}
 
-.section-heading .primary::after{background:#30b7e8;border-radius:.25em;display:block;width:1.25em;height:2px;margin-left:-.625em;position:absolute;bottom:0;left:8%;content:"";}
+/* .section-heading .primary::after{background:#30b7e8;border-radius:.25em;display:block;width:1.25em;height:2px;margin-left:-.625em;position:absolute;bottom:0;left:8%;content:"";} */
 
 #myself,#skills{color:white;width:50%}
 
@@ -98,4 +92,117 @@ p,dl,ol,ul{word-break:keep-all;}
 
 .section-content > p {margin-top:20px;}
 
-@media screen and (max-width: 1259px){.l-section.l-split{display:block}.l-section.l-split>.l-section{display:block;width:100% !important;}}
+@media screen and (max-width: 1259px){
+    .l-section.l-split{display:block}.l-section.l-split>.l-section{display:block;width:100% !important;}
+}
+
+
+
+/* what i can do */
+@media screen and (max-width: 640px)
+{
+    .section-heading .primary {
+        font-size: 39px;
+    }
+}
+
+@media screen and (max-width: 1499px)
+{    
+    .l-section {
+        padding: 100px 5vw;
+    }
+}
+/* footer */
+
+/*
+    @media all and (min-width:768px) and (max-width:1024px) { … } 
+    // 뷰포트 너비가 768px 이상 ‘그리고’ 1024px 이하이면 실행 
+*/
+
+.footer-widget-group{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer-widget {
+    flex: 1 auto;
+    padding: 1em 3em 1em 0;
+}
+.l-footer-holder {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.l-section-holder {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.footer-content {
+    margin-top: 2rem;
+    font-family: "Quicksand",sans-serif;
+}
+#footer, #footer a {
+    color: white;
+}
+#footer {
+    background: #282a2f;
+}
+
+
+@media screen and (max-width: 959px)
+{    
+    .footer-widget-group {
+        display: block;
+    }
+    .footer-widget {
+        padding: 1em;
+    }
+    .l-footer-holder {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .credit-left {
+        padding: 0 10px 0 0;
+        text-align: right;
+    }
+    .credit-left, .credit-right {
+        width: 50%;
+        margin: 0;
+    }
+    .credit-right {
+        padding: 0 0 0 10px;
+    }
+    .credit-left, .credit-right {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+a {
+    background-color: transparent;
+    color: #30b7e8;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.credit-right {
+    margin-left: 1em;
+    opacity: .66;
+}
+.credit-list {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.credit-item {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+@media screen and (max-width: 1259px)
+{
+    .l-section-holder {
+        max-width: 800px;
+    }
+}   
+
