@@ -98,5 +98,4 @@ p,dl,ol,ul{word-break:keep-all;}
 
 .section-content > p {margin-top:20px;}
 
-@media screen and (max-width: 1259px){.l-section.l-split{display:block}.l-section.l-split>.l-section{display:block;width:100% !important;}
-
+@media screen and (max-width: 1259px){.l-section.l-split{display:block}.l-section.l-split>.l-section{display:block;width:100% !important;}}
