@@ -112,6 +112,174 @@ p,dl,ol,ul{word-break:keep-all;}
         padding: 100px 5vw;
     }
 }
+
+/* 포트폴리오 메인 */
+
+.gallery-image-thumb {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.gallery-image {
+    max-width: 800px;
+}
+
+.gallery-figure {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gallery-caption {
+    margin-left: 2rem;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.gallery-title {
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.gallery-spec {
+    margin: 2em 0;
+    padding: 0;
+}
+
+.gallery-spec-item {
+    display: block;
+    line-height: 2.4;
+}
+
+.ui-group {
+    margin: 1rem 0;
+    padding: 0;
+    text-align: center;
+}
+
+.gallery-title::before {
+    color: #30b7e8;
+    display: inline-block;
+    width: 130px;
+    position: relative;
+    left: -0.05em;
+    vertical-align: -0.1em;
+    line-height: 1;
+    font-size: 64px;
+    font-weight: 400;
+    content: counter(article,decimal-leading-zero);
+}
+
+.ui-button {
+    background: #30b7e8;
+    border-radius: 44px;
+    color: white;
+    display: inline-block;
+    min-width: 7em;
+    height: 44px;
+    margin: 0;
+    overflow: hidden;
+    padding: 12px 16px 14px;
+    vertical-align: middle;
+    letter-spacing: -.03em;
+    line-height: 18px;
+    font-family: "Quicksand",sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    box-sizing: border-box;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    position: relative;
+}
+
+.gallery-table {
+    -webkit-box-flex: 1;
+    width: 100%;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 100%;
+}
+
+table thead {
+    font-family: "Quicksand",sans-serif;
+}
+
+table thead {
+    font-family: "Quicksand",sans-serif;
+}
+
+.gallery-table-col.category {
+    width: 6em;
+}
+
+table thead th {
+    background-color: rgba(77,128,153,0.05);
+    border-top-width: 1px;
+    color: #94979c;
+    padding: 1.2em 1em;
+}
+
+table th, table td {
+    border-bottom: 1px solid #e6e9ea;
+    padding: .3em 1em;
+    text-align: left;
+}
+
+table caption, table th {
+    font-weight: 500;
+    text-align: left;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.categ.html {
+    background: #8dca35;
+    color: white;
+}
+
+.categ.css {
+    background: #00bfdd;
+    color: white;
+}
+
+.categ.js {
+    background: #ff702a;
+    color: white;
+}
+
+.categ {
+    border-radius: .25em;
+    display: inline-block;
+    min-width: 2em;
+    padding: .35em .65em;
+    line-height: 1;
+    font-family: "Quicksand",sans-serif;
+    font-size: .92rem;
+    text-align: center;
+}
+
+
+
 /* footer */
 
 /*

@@ -22,11 +22,6 @@ def post_detail(request, pk):
         'post' : post,
     })
 
-def post_year(request):
-    #post = get_object_or_404(Post)
-    #return redirect('blog/post_year.html')    
-    return render(request, 'blog/post_year.html')
-
 def post_new(request):
     form_class = PostForm
     form = form_class(request.POST or None)
@@ -65,3 +60,13 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {
         'form': form,
     })
+
+def post_year(request):
+    #post = get_object_or_404(Post)
+    #return redirect('blog/post_year.html')    
+    return render(request, 'blog/post_year.html')
+
+def post_fmkorea(request):
+    #post = get_object_or_404(Post)
+    #return redirect('blog/post_year.html')    
+    return render(request, 'blog/post_fmkorea.html')
