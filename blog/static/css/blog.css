@@ -158,6 +158,7 @@ p,dl,ol,ul{word-break:keep-all;}
 .gallery-spec-item {
     display: block;
     line-height: 2.4;
+    
 }
 
 .ui-group {
