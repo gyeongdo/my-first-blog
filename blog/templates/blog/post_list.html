@@ -132,7 +132,7 @@
 
 
 
-<section role="region" id="works" class="l-section">
+        <section role="region" id="works" class="l-section">
             <div class="l-section-holder">
                 <h2 class="section-heading is-init is-animated" data-animation="fade-up">
                     <span class="secondary">Portfolio</span>
@@ -140,7 +140,6 @@
                 </h2>
                 
                 <div id="portfolio" class="section-content gallery alternate">
-
                     <article role="article" id="work1" class="gallery-item is-init is-animated" data-animation="fade-left">
                         <figure role="group" class="gallery-figure">
                             <div class="gallery-image">
@@ -154,7 +153,6 @@
                                 </ul>
                                 <div id="work1Description">
                                     <p><a href="{% url 'post_fmkorea' %}">부트스트랩</a>의 메인 페이지를 부트스트랩 기반으로 한 반응형 구조로 리뉴얼해 보았습니다.</p>
-                                    <p><a href="https://v4-alpha.getbootstrap.com/" target="_blank">부트스트랩의 4 alpha 버전</a>을 기반으로 제작되었고, 이 버전의 부트스트랩이 사용하는 Sass를 테마 제작에도 사용했으며, IE9+를 지원하는 jQuery 3.1 및 jQuery UI가 사용되었습니다.</p>
                                 </div>
                                 <div class="ui-group">
                                     <a role="button" class="ui-button" href="{% url 'post_fmkorea' %}">Demo</a>
@@ -172,21 +170,84 @@
                             <tbody>
                                 <tr>
                                     <td data-th="Category"><span class="categ html">HTML</span></td>
-                                    <td data-th="Source"><a href="https://github.com/findawayer/Portfolio-SAC/blob/gh-pages/index.html" target="_blank">index.html</a></td>
-                                    <td data-th="Related Keywords">HTML5, ARIA, SVG</td>
+                                    <td data-th="Source"><a href="#" target="_blank">index.html</a></td>
+                                    <td data-th="Related Keywords">HTML5</td>
                                 </tr>
                                 <tr>
                                     <td data-th="Category"><span class="categ css">CSS</span></td>
-                                    <td data-th="Source"><a href="https://github.com/findawayer/Portfolio-SAC/blob/gh-pages/scss/bootstrap-theme.scss" target="_blank">bootstrap-custom.css</a></td>
-                                    <td data-th="Related Keywords">Responsive, Bootstrap 4</td>
+                                    <td data-th="Source">bootstrap-custom.css</a></td>
+                                    <td data-th="Related Keywords">Responsive, Bootstrap</td>
                                 </tr>
                                 <tr>
                                     <td data-th="Category"><span class="categ js">JS</span></td>
-                                    <td data-th="Source"><a href="https://github.com/findawayer/Portfolio-SAC/blob/gh-pages/js/main.js" target="_blank">main.js</a></td>
-                                    <td data-th="Related Keywords">JavaScript, jQuery 3, <a href="http://kenwheeler.github.io/slick/" target="_blank">slick</a></td>
+                                    <td data-th="Source"><a href="#" target="_blank">main.js</a></td>
+                                    <td data-th="Related Keywords">JavaScript, jQuery 3</a></td>
                                 </tr>
                             </tbody>
                         </table>
+                    </article>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 프로포트폴리오 -->
+        <section role="region" id="works1" class="l-section">
+            <div class="l-section-holder">
+                <h2 class="section-heading is-init is-animated" data-animation="fade-up">
+                    <span class="secondary">Portfolio</span>
+                    <span class="primary">My works</span>
+                </h2>
+                
+                <div id="portfolio" class="section-content gallery alternate">
+                    <article role="article" id="work1" class="gallery-item is-init is-animated" data-animation="fade-left">
+                        <figure role="group" class="gallery-figure">
+                            <div class="gallery-image">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rpdUFEFgw3o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <h3 class="gallery-title">파이썬 셀레니움</h3>
+                                <ul class="gallery-spec">
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">python3</strong> <span class="gallery-spec-value"></span></li>
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">selenium</strong> <span class="gallery-spec-value"></span></li>
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">크롤링</strong> <span class="gallery-spec-value"></span></li>
+                                </ul>
+                                <div id="work1Description">
+                                    <p><a href="{% url 'post_fmkorea' %}">파이썬</a>을 이용하여 셀레니움을 사용하여 자동 주문을 해보았습니다.</p>
+                                </div>
+                                <div class="ui-group">
+                                    <a role="button" class="ui-button" href="{% url 'post_fmkorea' %}">Githup</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <!-- <table class="gallery-table">
+                            <thead>
+                                <tr>
+                                    <th class="gallery-table-col category">Category</th>
+                                    <th class="gallery-table-col source">Source</th>
+                                    <th class="gallery-table-col keywords">Related keywords</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-th="Category"><span class="categ html">HTML</span></td>
+                                    <td data-th="Source"><a href="#" target="_blank">index.html</a></td>
+                                    <td data-th="Related Keywords">HTML5</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="Category"><span class="categ css">CSS</span></td>
+                                    <td data-th="Source">bootstrap-custom.css</a></td>
+                                    <td data-th="Related Keywords">Responsive, Bootstrap</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="Category"><span class="categ js">JS</span></td>
+                                    <td data-th="Source"><a href="#" target="_blank">main.js</a></td>
+                                    <td data-th="Related Keywords">JavaScript, jQuery 3</a></td>
+                                </tr>
+                            </tbody>
+                        </table> -->
                     </article>
 
 

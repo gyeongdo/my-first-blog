@@ -177,7 +177,7 @@ p,dl,ol,ul{word-break:keep-all;}
     line-height: 1;
     font-size: 64px;
     font-weight: 400;
-    content: counter(article,decimal-leading-zero);
+    /* content: counter(article,decimal-leading-zero); */
 }
 
 .ui-button {
