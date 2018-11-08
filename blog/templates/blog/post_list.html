@@ -256,6 +256,80 @@
             </div>
         </section>
 
+        <!-- 프로포트폴리오 -->
+        <section role="region" id="works2" class="l-section">
+            <div class="l-section-holder">
+                <h2 class="section-heading is-init is-animated" data-animation="fade-up">
+                    <span class="secondary">Portfolio</span>
+                    <span class="primary">My works</span>
+                </h2>
+                
+                <div id="portfolio" class="section-content gallery alternate">
+                    <article role="article" id="work1" class="gallery-item is-init is-animated" data-animation="fade-left">
+                        <figure role="group" class="gallery-figure">
+                            <div class="gallery-image">
+                                <img class="gallery-image-thumb" src="{% static 'img/foodAdministry.PNG' %}" alt="커뮤니티 사이트 에펨코리아" aria-describedby="work1Description">
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <h3 class="gallery-title">식품의약품안전처 SI 개발 사업(2016~2018)</h3>
+                                <ul class="gallery-spec">
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">2016 의약품 유지보수</strong> <span class="gallery-spec-value"></span></li>
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">2017 식품의약품안전처 통합안전망 고도화 사업</strong> <span class="gallery-spec-value"></span></li>
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">2018 식품의약품안전처 의약품 차세대 사업</strong> <span class="gallery-spec-value"></span></li>
+                                </ul>
+                                <div id="work1Description">
+                                    <p><a href="{% url 'post_fmkorea' %}">스프링 전자정부 프레임워크</a>를 이용하여 웹 어플리케이션을 만들었습니다.</p>
+                                </div>
+                                <div class="ui-group">
+                                    <a role="button" class="ui-button" href="{% url 'post_fmkorea' %}">Githup</a>
+                                </div> 
+                            </figcaption>
+                        </figure>
+                        <!-- <table class="gallery-table">
+                            <thead>
+                                <tr>
+                                    <th class="gallery-table-col category">Category</th>
+                                    <th class="gallery-table-col source">Source</th>
+                                    <th class="gallery-table-col keywords">Related keywords</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-th="Category"><span class="categ html">HTML</span></td>
+                                    <td data-th="Source"><a href="#" target="_blank">index.html</a></td>
+                                    <td data-th="Related Keywords">HTML5</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="Category"><span class="categ css">CSS</span></td>
+                                    <td data-th="Source">bootstrap-custom.css</a></td>
+                                    <td data-th="Related Keywords">Responsive, Bootstrap</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="Category"><span class="categ js">JS</span></td>
+                                    <td data-th="Source"><a href="#" target="_blank">main.js</a></td>
+                                    <td data-th="Related Keywords">JavaScript, jQuery 3</a></td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                    </article>
+
+
+                </div>
+            </div>
+
+            {% for post in post_list %}
+            <div class="post">
+                <div class="date">
+                    {{ post.published_date }}
+                </div>
+                <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaks }}</p>
+                <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.comments.count }}</a>
+            </div>
+            {% endfor %}
+        </section>
+
+
 
 
 {% endblock %}
