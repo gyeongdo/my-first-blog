@@ -113,7 +113,69 @@
 
 
 
+        <!-- 프로포트폴리오 -->
+        <section role="region" id="works2" class="l-section">
+            <div class="l-section-holder">
+                <h2 class="section-heading is-init is-animated" data-animation="fade-up">
+                    <span class="secondary">Portfolio</span>
+                    <span class="primary">My works</span>
+                </h2>
+                
+                <div id="portfolio" class="section-content gallery alternate">
+                    <article role="article" id="work1" class="gallery-item is-init is-animated" data-animation="fade-left">
+                        <figure role="group" class="gallery-figure">
+                            <div class="gallery-image">
+                                <img class="gallery-image-thumb" src="{% static 'img/foodAdministry.PNG' %}" alt="커뮤니티 사이트 에펨코리아" aria-describedby="work1Description">
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <h3 class="gallery-title">식품의약품안전처 SI 개발 사업(2016~2018)</h3>
+                                <ul class="gallery-spec">
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">2016 의약품 유지보수</strong> <span class="gallery-spec-value"></span></li>
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">2017 식품의약품안전처 통합안전망 고도화 사업</strong> <span class="gallery-spec-value"></span></li>
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">2018 식품의약품안전처 의약품 차세대 사업</strong> <span class="gallery-spec-value"></span></li>
+                                </ul>
+                                <div id="work1Description">
+                                    <p><a href="/">스프링 전자정부 프레임워크</a>를 이용하여 웹 어플리케이션을 만들었습니다.</p>
+                                    <p>JAVA, jsp, jQuery, html, css, spring을 사용하였으며 간단한 테이블 설계와 분석을 진행하면서 si를 경험하였습니다.</p>
+                                </div>
+                                <div class="ui-group">
+                                    <a role="button" class="ui-button" href="/">Githup</a>
+                                </div> 
+                            </figcaption>
+                        </figure>
+                        <!-- <table class="gallery-table">
+                            <thead>
+                                <tr>
+                                    <th class="gallery-table-col category">Category</th>
+                                    <th class="gallery-table-col source">Source</th>
+                                    <th class="gallery-table-col keywords">Related keywords</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-th="Category"><span class="categ html">HTML</span></td>
+                                    <td data-th="Source"><a href="#" target="_blank">index.html</a></td>
+                                    <td data-th="Related Keywords">HTML5</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="Category"><span class="categ css">CSS</span></td>
+                                    <td data-th="Source">bootstrap-custom.css</a></td>
+                                    <td data-th="Related Keywords">Responsive, Bootstrap</td>
+                                </tr>
+                                <tr>
+                                    <td data-th="Category"><span class="categ js">JS</span></td>
+                                    <td data-th="Source"><a href="#" target="_blank">main.js</a></td>
+                                    <td data-th="Related Keywords">JavaScript, jQuery 3</a></td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                    </article>
 
+
+                </div>
+            </div>
+
+        </section>
 
 
 
@@ -143,23 +205,25 @@
                     <article role="article" id="work1" class="gallery-item is-init is-animated" data-animation="fade-left">
                         <figure role="group" class="gallery-figure">
                             <div class="gallery-image">
-                                <img class="gallery-image-thumb" src="{% static 'img/fmkoreaMain1.png' %}" alt="커뮤니티 사이트 에펨코리아" aria-describedby="work1Description">
+                                <img class="gallery-image-thumb" src="{% static 'img/instaClone.PNG' %}" alt="커뮤니티 사이트 에펨코리아" aria-describedby="work1Description">
                             </div>
                             <figcaption class="gallery-caption">
-                                <h3 class="gallery-title">부트스트랩 튜토리얼</h3>
+                                <h3 class="gallery-title">인스타그램 클론 코딩</h3>
                                 <ul class="gallery-spec">
-                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">Viewport</strong> <span class="gallery-spec-value">반응형</span></li>
-                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">IE support</strong> <span class="gallery-spec-value">IE9+</span></li>
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">Django Restframework</strong> <span class="gallery-spec-value">postgre</span></li>
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">React</strong> <span class="gallery-spec-value">redux, thunk</span></li>
                                 </ul>
                                 <div id="work1Description">
-                                    <p><a href="{% url 'post_fmkorea' %}">부트스트랩</a>의 메인 페이지를 부트스트랩 기반으로 한 반응형 구조로 리뉴얼해 보았습니다.</p>
-                                </div>
-                                <div class="ui-group">
-                                    <a role="button" class="ui-button" href="{% url 'post_fmkorea' %}">Demo</a>
+                                    <p><a href="/">인스타그램</a>클론 코딩을 진행하면서 좋아요, 댓글, 로그인 기능을 구현했습니다</p>
+                                    <p>퇴사 후 인터넷 강의와 스터디를 통해 리액트를 독학하였습니다. 새로운 기술을 배우는게 항상 기대되고 즐거워 시작하게 되었고
+                                       퇴사 후 남는시간 내가 원하는 개발에 집중할 수 있어 재밌게 개발을 하였습니다.
+                                       특히 그동안 restful한 개발의 개념을 글로만 익혔는데 직접 프론트와 백엔드를 구분하여 개발을 해보니 구조를 더 배우게 되어 좋았습니다.
+                                       
+                                    </p>
                                 </div>
                             </figcaption>
                         </figure>
-                        <table class="gallery-table">
+                        {% comment %} <table class="gallery-table">
                             <thead>
                                 <tr>
                                     <th class="gallery-table-col category">Category</th>
@@ -184,7 +248,7 @@
                                     <td data-th="Related Keywords">JavaScript, jQuery 3</a></td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table> {% endcomment %}
                     </article>
 
 
@@ -222,101 +286,12 @@
                                 </div> 
                             </figcaption>
                         </figure>
-                        <!-- <table class="gallery-table">
-                            <thead>
-                                <tr>
-                                    <th class="gallery-table-col category">Category</th>
-                                    <th class="gallery-table-col source">Source</th>
-                                    <th class="gallery-table-col keywords">Related keywords</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td data-th="Category"><span class="categ html">HTML</span></td>
-                                    <td data-th="Source"><a href="#" target="_blank">index.html</a></td>
-                                    <td data-th="Related Keywords">HTML5</td>
-                                </tr>
-                                <tr>
-                                    <td data-th="Category"><span class="categ css">CSS</span></td>
-                                    <td data-th="Source">bootstrap-custom.css</a></td>
-                                    <td data-th="Related Keywords">Responsive, Bootstrap</td>
-                                </tr>
-                                <tr>
-                                    <td data-th="Category"><span class="categ js">JS</span></td>
-                                    <td data-th="Source"><a href="#" target="_blank">main.js</a></td>
-                                    <td data-th="Related Keywords">JavaScript, jQuery 3</a></td>
-                                </tr>
-                            </tbody>
-                        </table> -->
                     </article>
-
-
-
-                </div>
-            </div>
-        </section>
-
-        <!-- 프로포트폴리오 -->
-        <section role="region" id="works2" class="l-section">
-            <div class="l-section-holder">
-                <h2 class="section-heading is-init is-animated" data-animation="fade-up">
-                    <span class="secondary">Portfolio</span>
-                    <span class="primary">My works</span>
-                </h2>
-                
-                <div id="portfolio" class="section-content gallery alternate">
-                    <article role="article" id="work1" class="gallery-item is-init is-animated" data-animation="fade-left">
-                        <figure role="group" class="gallery-figure">
-                            <div class="gallery-image">
-                                <img class="gallery-image-thumb" src="{% static 'img/foodAdministry.PNG' %}" alt="커뮤니티 사이트 에펨코리아" aria-describedby="work1Description">
-                            </div>
-                            <figcaption class="gallery-caption">
-                                <h3 class="gallery-title">식품의약품안전처 SI 개발 사업(2016~2018)</h3>
-                                <ul class="gallery-spec">
-                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">2016 의약품 유지보수</strong> <span class="gallery-spec-value"></span></li>
-                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">2017 식품의약품안전처 통합안전망 고도화 사업</strong> <span class="gallery-spec-value"></span></li>
-                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">2018 식품의약품안전처 의약품 차세대 사업</strong> <span class="gallery-spec-value"></span></li>
-                                </ul>
-                                <div id="work1Description">
-                                    <p><a href="{% url 'post_fmkorea' %}">스프링 전자정부 프레임워크</a>를 이용하여 웹 어플리케이션을 만들었습니다.</p>
-                                </div>
-                                <div class="ui-group">
-                                    <a role="button" class="ui-button" href="{% url 'post_fmkorea' %}">Githup</a>
-                                </div> 
-                            </figcaption>
-                        </figure>
-                        <!-- <table class="gallery-table">
-                            <thead>
-                                <tr>
-                                    <th class="gallery-table-col category">Category</th>
-                                    <th class="gallery-table-col source">Source</th>
-                                    <th class="gallery-table-col keywords">Related keywords</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td data-th="Category"><span class="categ html">HTML</span></td>
-                                    <td data-th="Source"><a href="#" target="_blank">index.html</a></td>
-                                    <td data-th="Related Keywords">HTML5</td>
-                                </tr>
-                                <tr>
-                                    <td data-th="Category"><span class="categ css">CSS</span></td>
-                                    <td data-th="Source">bootstrap-custom.css</a></td>
-                                    <td data-th="Related Keywords">Responsive, Bootstrap</td>
-                                </tr>
-                                <tr>
-                                    <td data-th="Category"><span class="categ js">JS</span></td>
-                                    <td data-th="Source"><a href="#" target="_blank">main.js</a></td>
-                                    <td data-th="Related Keywords">JavaScript, jQuery 3</a></td>
-                                </tr>
-                            </tbody>
-                        </table> -->
-                    </article>
-
 
                 </div>
             </div>
 
+            
             {% for post in post_list %}
             <div class="post">
                 <div class="date">
@@ -327,7 +302,11 @@
                 <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.comments.count }}</a>
             </div>
             {% endfor %}
+
+
         </section>
+
+
 
 
 
