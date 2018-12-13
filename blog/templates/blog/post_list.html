@@ -291,6 +291,47 @@
                 </div>
             </div>
 
+<!-- 프로포트폴리오 -->
+        <section role="region" id="works1" class="l-section">
+            <div class="l-section-holder">
+                <h2 class="section-heading is-init is-animated" data-animation="fade-up">
+                    <span class="secondary">Portfolio</span>
+                    <span class="primary">My works</span>
+                </h2>
+                
+                <div id="portfolio" class="section-content gallery alternate">
+                    <article role="article" id="work1" class="gallery-item is-init is-animated" data-animation="fade-left">
+                        <figure role="group" class="gallery-figure">
+                            <div class="gallery-image">
+                                <img class="gallery-image-thumb" src="{% static 'img/ios.jpg' %}" alt="문제적퀴즈 앱" aria-describedby="work1Description"
+                                style="height:500px;"
+                               >
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <h3 class="gallery-title">문제적퀴즈 네이티브앱</h3>
+                                <ul class="gallery-spec">
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">안드로이드 스튜디오</strong> <span class="gallery-spec-value"></span></li>
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">xcode</strong> <span class="gallery-spec-value"></span></li>
+                                </ul>
+                                <div id="work1Description">
+                                    <p>
+                                        <a href="https://play.google.com/store/apps/details?id=com.Lee.mattew.gyeongdo">안드로이드</a>
+                                        기준 다운로드 수 1만의 앱을 취미로 개발하였습니다. 평소에 취미가 개발이여서 이것저것 재밌는 개발을 해보고 싶어서
+                                        튜토리얼에 그치지 않고 바로 만든 앱 입니다. 퇴근 후 시간을 쪼개서 만들기 시작한 것이 도움이 되어 회사의
+                                        조그만 앱을 유지보수할 때도 많은 도움이 되었습니다.
+                                        또한 ios앱도 출시를 마친 상태입니다.
+                                        물론 앱 개발자라고 말하긴 어렵지만 간단한 유지보수 정도는 가능한 수준입니다.
+                                    </p>
+                                </div>
+                                <div class="ui-group">
+                                    <a role="button" class="ui-button" href="https://github.com/gyeongdo">Githup</a>
+                                </div> 
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                </div>
+            </div>
             
             {% comment %} {% for post in post_list %}
             <div class="post">
