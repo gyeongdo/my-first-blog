@@ -282,7 +282,7 @@
                                     <p><a href="{% url 'post_fmkorea' %}">파이썬</a>을 이용하여 셀레니움을 사용하여 자동 주문을 해보았습니다.</p>
                                 </div>
                                 <div class="ui-group">
-                                    <a role="button" class="ui-button" href="{% url 'post_fmkorea' %}">Githup</a>
+                                    <a role="button" class="ui-button" href="https://github.com/gyeongdo">Githup</a>
                                 </div> 
                             </figcaption>
                         </figure>
@@ -292,7 +292,7 @@
             </div>
 
             
-            {% for post in post_list %}
+            {% comment %} {% for post in post_list %}
             <div class="post">
                 <div class="date">
                     {{ post.published_date }}
@@ -301,7 +301,7 @@
                 <p>{{ post.text|linebreaks }}</p>
                 <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.comments.count }}</a>
             </div>
-            {% endfor %}
+            {% endfor %} {% endcomment %}
 
 
         </section>
