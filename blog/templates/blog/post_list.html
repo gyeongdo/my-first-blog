@@ -3,46 +3,6 @@
 
 {% block content %}
 {% load static %}
-      <div id="myCarousel" class="example-classname carousel slide" data-ride="carousel"> 
-          <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-              <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-          </ol>
-          <div class="carousel-inner">
-              <div class="item active"> <img src="{% static 'img/city.jpg' %}" style="width:100%" data-src="" alt="First slide">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h2> Headling 1 </h2>
-                    <p> Description 1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item"> <img src="{% static 'img/spec.jpeg' %}" style="width:100%" data-src="" alt="Second slide">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h2>Headling 2</h2>
-                    <p> Description 2</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item"> <img src="{% static 'img/dsaw.jpg' %}" style="width:100%" data-src="" alt="Third slide">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h2>Headling 3</h2>
-                    <p> Description 3</p>
-                    <p><a class="btn btn-lg btn-primary" href="{% url 'post_year' %}" role="button">Learn more</a></p>
-                  </div>
-                </div>
-              </div>
-          </div>           
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-      </div>
 
       <div class="bgimg">
         <div id="introduction" class="l-section l-split">
@@ -66,7 +26,13 @@
                         <span class="secondary">Skills</span>
                         <span class="primary">What I can do</span>
                     </h2>
-                    <div class="section-content">
+                    <div class="section-content">React / Redux</figcaption>
+                            <ul class="skill-list checked-list">
+                                <li>리액트와 리덕스를 이용하여 토이 프로젝트 경험 및 스터디 활동</li>
+                                <li>장고 Restframework(postgreSQL), KOA JS(mongoDB)로 백엔드 구성</li>
+                                <li>es6, scss</li>
+                            </ul>
+                        </figure>
                         <figure>
                             <figcaption class="list-caption">JAVA</figcaption>
                             <ul class="skill-list checked-list">
@@ -79,13 +45,6 @@
                             <ul class="skill-list checked-list">
                                 <li>Orcle, Altibase 프로젝트 경험</li>
                                 <li>....</li>
-                            </ul>
-                        </figure>
-                        <figure>
-                            <figcaption class="list-caption">HTML</figcaption>
-                            <ul class="skill-list checked-list">
-                                <li>HTML5 및 XHTML 페이지 하드코딩</li>
-                                <li>웹 접근성 (Native)</li>
                             </ul>
                         </figure>
                         <figure>
@@ -210,7 +169,7 @@
                             <figcaption class="gallery-caption">
                                 <h3 class="gallery-title">인스타그램 클론 코딩</h3>
                                 <ul class="gallery-spec">
-                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">Django Restframework</strong> <span class="gallery-spec-value">postgre</span></li>
+                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">Django Restframework</strong> <span class="gallery-spec-value">postgreSQL</span></li>
                                     <li class="gallery-spec-item"><strong class="gallery-spec-key">React</strong> <span class="gallery-spec-value">redux, thunk</span></li>
                                 </ul>
                                 <div id="work1Description">
@@ -223,36 +182,7 @@
                                 </div>
                             </figcaption>
                         </figure>
-                        {% comment %} <table class="gallery-table">
-                            <thead>
-                                <tr>
-                                    <th class="gallery-table-col category">Category</th>
-                                    <th class="gallery-table-col source">Source</th>
-                                    <th class="gallery-table-col keywords">Related keywords</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td data-th="Category"><span class="categ html">HTML</span></td>
-                                    <td data-th="Source"><a href="#" target="_blank">index.html</a></td>
-                                    <td data-th="Related Keywords">HTML5</td>
-                                </tr>
-                                <tr>
-                                    <td data-th="Category"><span class="categ css">CSS</span></td>
-                                    <td data-th="Source">bootstrap-custom.css</a></td>
-                                    <td data-th="Related Keywords">Responsive, Bootstrap</td>
-                                </tr>
-                                <tr>
-                                    <td data-th="Category"><span class="categ js">JS</span></td>
-                                    <td data-th="Source"><a href="#" target="_blank">main.js</a></td>
-                                    <td data-th="Related Keywords">JavaScript, jQuery 3</a></td>
-                                </tr>
-                            </tbody>
-                        </table> {% endcomment %}
                     </article>
-
-
-
                 </div>
             </div>
         </section>
@@ -287,69 +217,50 @@
                             </figcaption>
                         </figure>
                     </article>
-
                 </div>
             </div>
-
-<!-- 프로포트폴리오 -->
-        <section role="region" id="works1" class="l-section">
-            <div class="l-section-holder">
-                <h2 class="section-heading is-init is-animated" data-animation="fade-up">
-                    <span class="secondary">Portfolio</span>
-                    <span class="primary">My works</span>
-                </h2>
-                
-                <div id="portfolio" class="section-content gallery alternate">
-                    <article role="article" id="work1" class="gallery-item is-init is-animated" data-animation="fade-left">
-                        <figure role="group" class="gallery-figure">
-                            <div class="gallery-image">
-                                <img class="gallery-image-thumb" src="{% static 'img/ios.jpg' %}" alt="문제적퀴즈 앱" aria-describedby="work1Description"
-                                style="height:500px;"
-                               >
-                            </div>
-                            <figcaption class="gallery-caption">
-                                <h3 class="gallery-title">문제적퀴즈 네이티브앱</h3>
-                                <ul class="gallery-spec">
-                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">안드로이드 스튜디오</strong> <span class="gallery-spec-value"></span></li>
-                                    <li class="gallery-spec-item"><strong class="gallery-spec-key">xcode</strong> <span class="gallery-spec-value"></span></li>
-                                </ul>
-                                <div id="work1Description">
-                                    <p>
-                                        <a href="https://play.google.com/store/apps/details?id=com.Lee.mattew.gyeongdo">안드로이드</a>
-                                        기준 다운로드 수 1만의 앱을 취미로 개발하였습니다. 평소에 취미가 개발이여서 이것저것 재밌는 개발을 해보고 싶어서
-                                        튜토리얼에 그치지 않고 바로 만든 앱 입니다. 퇴근 후 시간을 쪼개서 만들기 시작한 것이 도움이 되어 회사의
-                                        조그만 앱을 유지보수할 때도 많은 도움이 되었습니다.
-                                        또한 ios앱도 출시를 마친 상태입니다.
-                                        물론 앱 개발자라고 말하긴 어렵지만 간단한 유지보수 정도는 가능한 수준입니다.
-                                    </p>
-                                </div>
-                                <div class="ui-group">
-                                    <a role="button" class="ui-button" href="https://github.com/gyeongdo">Githup</a>
-                                </div> 
-                            </figcaption>
-                        </figure>
-                    </article>
-
-                </div>
-            </div>
-            
-            {% comment %} {% for post in post_list %}
-            <div class="post">
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-                <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
-                <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.comments.count }}</a>
-            </div>
-            {% endfor %} {% endcomment %}
-
-
         </section>
 
+    <!-- 프로포트폴리오 -->
+    <section role="region" id="works1" class="l-section">
+        <div class="l-section-holder">
+            <h2 class="section-heading is-init is-animated" data-animation="fade-up">
+                <span class="secondary">Portfolio</span>
+                <span class="primary">My works</span>
+            </h2>
+            
+            <div id="portfolio" class="section-content gallery alternate">
+                <article role="article" id="work1" class="gallery-item is-init is-animated" data-animation="fade-left">
+                    <figure role="group" class="gallery-figure">
+                        <div class="gallery-image">
+                            <img class="gallery-image-thumb" src="{% static 'img/ios.jpg' %}" alt="문제적퀴즈 앱" aria-describedby="work1Description"
+                            style="height:500px;"
+                            >
+                        </div>
+                        <figcaption class="gallery-caption">
+                            <h3 class="gallery-title">문제적퀴즈 네이티브앱</h3>
+                            <ul class="gallery-spec">
+                                <li class="gallery-spec-item"><strong class="gallery-spec-key">안드로이드 스튜디오</strong> <span class="gallery-spec-value"></span></li>
+                                <li class="gallery-spec-item"><strong class="gallery-spec-key">xcode</strong> <span class="gallery-spec-value"></span></li>
+                            </ul>
+                            <div id="work1Description">
+                                <p>
+                                    <a href="https://play.google.com/store/apps/details?id=com.Lee.mattew.gyeongdo">안드로이드</a>
+                                    기준 다운로드 수 1만의 앱을 취미로 개발하였습니다. 평소에 취미가 개발이여서 이것저것 재밌는 개발을 해보고 싶어서
+                                    튜토리얼에 그치지 않고 바로 만든 앱 입니다. 퇴근 후 시간을 쪼개서 만들기 시작한 것이 도움이 되어 회사의
+                                    조그만 앱을 유지보수할 때도 많은 도움이 되었습니다.
+                                    또한 ios앱도 출시를 마친 상태입니다.
+                                    물론 앱 개발자라고 말하긴 어렵지만 간단한 유지보수 정도는 가능한 수준입니다.
+                                </p>
+                            </div>
+                            <div class="ui-group">
+                                <a role="button" class="ui-button" href="https://github.com/gyeongdo">Githup</a>
+                            </div> 
+                        </figcaption>
+                    </figure>
+                </article>
+            </div>
+        </div>
 
-
-
-
-
+    </section>
 {% endblock %}
